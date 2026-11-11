@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-11T03:30:53.406Z",
+  "source": "github",
+  "repos": [
+    {
+      "name": "SorPuti",
+      "description": "",
+      "language": "",
+      "url": "https://github.com/SorPuti/SorPuti",
+      "stars": 3,
+      "createdAt": "2021-12-10T20:15:32.000Z",
+      "pushedAt": "2026-11-11T03:04:34.000Z"
+    },
+    {
+      "name": "openidea-collab",
+      "description": "Real-time collaboration plugin for OpenIDEA IDE — file sync, presence panel, HTTP long-poll",
+      "language": "Rust",
+      "url": "https://github.com/SorPuti/openidea-collab",
+      "stars": 0,
+      "createdAt": "2026-11-09T19:05:23.000Z",
+      "pushedAt": "2026-11-11T02:55:08.000Z"
+    },
+    {
+      "name": "byte-to-byte-learning",
+      "description": "",
+      "language": "Python",
+      "url": "https://github.com/SorPuti/byte-to-byte-learning",
+      "stars": 0,
+      "createdAt": "2026-11-10T20:53:50.000Z",
+      "pushedAt": "2026-11-10T23:00:13.000Z"
+    },
+    {
+      "name": "talkweave",
+      "description": "",
+      "language": "Python",
+      "url": "https://github.com/SorPuti/talkweave",
+      "stars": 0,
+      "createdAt": "2026-11-08T21:12:23.000Z",
+      "pushedAt": "2026-11-08T21:12:43.000Z"
+    },
+    {
+      "name": "persistent-pagemap",
+      "description": "Persistent, versioned, queryable structural PageMap SDK (no LLM required). Agent-Page is a sibling runtime. Deeper docs may be in Portuguese.",
+      "language": "JavaScript",
+      "url": "https://github.com/SorPuti/persistent-pagemap",
+      "stars": 0,
+      "createdAt": "2026-09-15T23:43:21.000Z",
+      "pushedAt": "2026-09-15T23:43:33.000Z"
+    },
+    {
+      "name": "ToolMind",
+      "description": "",
+      "language": "Rust",
+      "url": "https://github.com/SorPuti/ToolMind",
+      "stars": 0,
+      "createdAt": "2026-05-03T23:02:53.000Z",
+      "pushedAt": "2026-07-03T21:45:46.000Z"
+    },
+    {
+      "name": "core-framework",
+      "description": "Core Framework - Django-inspired, FastAPI-powered. Alta performance, baixo acoplamento, produtividade extrema.",
+      "language": "Python",
+      "url": "https://github.com/SorPuti/core-framework",
+      "stars": 3,
+      "createdAt": "2026-02-01T18:34:56.000Z",
+      "pushedAt": "2026-04-21T23:50:38.000Z"
+    },
+    {
+      "name": "shgames",
+      "description": "",
+      "language": "Shell",
+      "url": "https://github.com/SorPuti/shgames",
+      "stars": 0,
+      "createdAt": "2025-12-28T03:53:30.000Z",
+      "pushedAt": "2025-12-28T03:59:55.000Z"
+    },
+    {
+      "name": "service-with-django-examples",
+      "description": "",
+      "language": "Python",
+      "url": "https://github.com/SorPuti/service-with-django-examples",
+      "stars": 1,
+      "createdAt": "2025-11-03T23:44:55.000Z",
+      "pushedAt": "2025-11-04T17:54:07.000Z"
+    },
+    {
+      "name": "Core",
+      "description": "",
+      "language": "Java",
+      "url": "https://github.com/SorPuti/Core",
+      "stars": 3,
+      "createdAt": "2021-12-29T16:49:18.000Z",
+      "pushedAt": "2025-08-25T16:55:01.000Z"
+    },
+    {
+      "name": "ap-soc",
+      "description": "",
+      "language": "HTML",
+      "url": "https://github.com/SorPuti/ap-soc",
+      "stars": 1,
+      "createdAt": "2022-11-21T03:40:58.000Z",
+      "pushedAt": "2025-08-25T16:49:26.000Z"
+    },
+    {
+      "name": "php-web",
+      "description": "",
+      "language": "PHP",
+      "url": "https://github.com/SorPuti/php-web",
+      "stars": 1,
+      "createdAt": "2024-04-18T22:07:24.000Z",
+      "pushedAt": "2024-04-18T22:08:25.000Z"
+    },
+    {
+      "name": "SecurityProtocol",
+      "description": "",
+      "language": "Java",
+      "url": "https://github.com/SorPuti/SecurityProtocol",
+      "stars": 1,
+      "createdAt": "2022-02-10T17:23:00.000Z",
+      "pushedAt": "2023-08-14T00:41:42.000Z"
+    },
+    {
+      "name": "socket-engine-java",
+      "description": "",
+      "language": "Java",
+      "url": "https://github.com/SorPuti/socket-engine-java",
+      "stars": 1,
+      "createdAt": "2022-03-04T18:29:33.000Z",
+      "pushedAt": "2022-03-04T19:59:46.000Z"
+    },
+    {
+      "name": "ZikBot-client-java-",
+      "description": "",
+      "language": "Java",
+      "url": "https://github.com/SorPuti/ZikBot-client-java-",
+      "stars": 1,
+      "createdAt": "2022-03-04T19:06:08.000Z",
+      "pushedAt": "2022-03-04T19:42:34.000Z"
+    },
+    {
+      "name": "ZikBot-server-java",
+      "description": "",
+      "language": "Java",
+      "url": "https://github.com/SorPuti/ZikBot-server-java",
+      "stars": 1,
+      "createdAt": "2022-03-04T16:03:09.000Z",
+      "pushedAt": "2022-03-04T19:26:30.000Z"
+    }
+  ]
+}

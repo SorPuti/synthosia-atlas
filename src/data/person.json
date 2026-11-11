@@ -1,0 +1,166 @@
+{
+  "name": "Lucas (Luh) Gomes",
+  "shortName": "Luh Gomes",
+  "pronouns": "ela/dela",
+  "label": "Engenheira de software",
+  "location": "Itapoá, Santa Catarina, Brasil",
+  "github": "https://github.com/SorPuti",
+  "linkedin": "https://www.linkedin.com/in/lucas-gomes-b14a83309/",
+  "website": "https://synthosia.com",
+  "reviewedAt": "2026-11-11",
+  "summary": "Engenheira de software com experiência em backend, automação e ferramentas para desenvolvedores. Desenvolvedora na Reddin e CTO na Imóvel Periciado, trabalhando com Python, APIs e análise de documentos jurídicos e registrais. No open source, explora memória estrutural para agentes, sistemas de voz e colaboração em tempo real.",
+  "skills": [
+    {
+      "name": "Backend e arquitetura",
+      "keywords": [
+        "Python",
+        "Java",
+        "FastAPI",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Redis",
+        "APIs REST",
+        "asyncio",
+        "Microserviços"
+      ]
+    },
+    {
+      "name": "IA e automação",
+      "keywords": [
+        "Ferramentas para agentes",
+        "Análise de documentos",
+        "Aprendizado de máquina",
+        "Sistemas de voz",
+        "Automação de navegador"
+      ]
+    },
+    {
+      "name": "Ferramentas e infraestrutura",
+      "keywords": ["Rust", "TypeScript", "JavaScript", "Linux", "Docker", "Git"]
+    }
+  ],
+  "work": [
+    {
+      "name": "Reddin",
+      "position": "Desenvolvedora",
+      "startDate": "2025-02",
+      "endDate": "",
+      "mode": "Remoto · Porto Alegre, RS",
+      "summary": "Desenvolvimento de software com Python e FastAPI.",
+      "highlights": [
+        "Desenvolvimento de soluções backend em Python.",
+        "Construção de APIs com FastAPI."
+      ]
+    },
+    {
+      "name": "Imóvel Periciado Leitura de Documentos LTDA",
+      "position": "CTO",
+      "startDate": "2024-12",
+      "endDate": "",
+      "mode": "Híbrido · Santa Catarina",
+      "summary": "Liderança técnica na digitalização e automação de processos jurídicos e registrais do setor imobiliário.",
+      "highlights": [
+        "Análise, extração e validação de informações de matrículas, contratos e registros cartoriais.",
+        "Desenvolvimento de fluxos de análise e interpretação semântica de documentos técnicos."
+      ]
+    },
+    {
+      "name": "UniVault",
+      "position": "Software Engineer",
+      "startDate": "2021",
+      "endDate": "2024",
+      "mode": "",
+      "summary": "Desenvolvimento e manutenção de sistemas backend e automações para análise e armazenamento de documentos.",
+      "highlights": [
+        "APIs e microserviços em Python, FastAPI, SQLAlchemy e PostgreSQL.",
+        "Pipelines de análise e persistência de documentos no DocVault.",
+        "Automações de coleta de dados, integração com sistemas externos e controle de fluxos assíncronos com asyncio."
+      ]
+    },
+    {
+      "name": "Rei Box",
+      "position": "Allocator",
+      "startDate": "2023-01",
+      "endDate": "2023-01",
+      "mode": "Presencial · São Bento do Sul, SC",
+      "summary": "Organização e reposição de mercadorias, inventário e atendimento ao público em contrato temporário.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Centro Universitário Unifacvest",
+      "startDate": "2024",
+      "endDate": "2026",
+      "status": "Em curso; conclusão prevista para 2026. Curso não informado."
+    },
+    {
+      "institution": "eeb GmbH",
+      "studyType": "Ensino médio",
+      "status": "Concluído."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "openidea-collab",
+      "name": "OpenIDEA Collab",
+      "category": "Colaboração",
+      "number": "01",
+      "year": "2026",
+      "stack": "RUST · CRDT · WEBSOCKET",
+      "tag": "Plugin experimental",
+      "headline": "Criar junto,\nmesmo de longe.",
+      "description": "Documentos compartilhados, presença e sincronização em tempo real para uma IDE nativa em Rust.",
+      "detail": "Um plugin e um relay autenticado para explorar colaboração no OpenIDEA. As APIs propostas ainda dependem de revisão e lançamento upstream; o projeto não é uma versão aprovada no marketplace.",
+      "url": "https://github.com/SorPuti/openidea-collab"
+    },
+    {
+      "slug": "talkweave",
+      "name": "TalkWeave",
+      "category": "Voz e aprendizado",
+      "number": "02",
+      "year": "2026",
+      "stack": "PYTHON · ÁUDIO · RUST",
+      "tag": "Laboratório aberto",
+      "headline": "Uma conversa tem\nmais de uma direção.",
+      "description": "Um laboratório para entender e construir as bases de um motor de voz full-duplex.",
+      "detail": "Tutorial em português, código Python, ferramentas interativas e um ponto de partida para portabilidade em Rust. A demonstração usa áudio sintético: valida o pipeline, sem prometer voz humana ou um modelo conversacional pronto.",
+      "url": "https://github.com/SorPuti/talkweave",
+      "demo": "https://sorputi.github.io/talkweave/"
+    },
+    {
+      "slug": "persistent-pagemap",
+      "name": "Persistent PageMap",
+      "category": "Agentes e memória",
+      "number": "03",
+      "year": "2026",
+      "stack": "JAVASCRIPT · SDK · AGENTES",
+      "tag": "SDK local",
+      "headline": "Lembrar é diferente\nde enxergar.",
+      "description": "Memória estrutural, versionada e consultável para agentes que interagem com a web.",
+      "detail": "Separa o que o agente conhece do estado atual da página. Observa, consulta, resolve e valida antes de executar; adaptadores de navegador e armazenamento são injetados. O estado atual tem a última palavra.",
+      "url": "https://github.com/SorPuti/persistent-pagemap"
+    },
+    {
+      "slug": "core-framework",
+      "name": "Stride",
+      "category": "Backend e ferramentas",
+      "number": "04",
+      "year": "2026",
+      "stack": "PYTHON · FASTAPI · SQLALCHEMY",
+      "tag": "Framework open source",
+      "headline": "Menos repetição.\nMais espaço para criar.",
+      "description": "Um framework para explorar APIs assíncronas produtivas com FastAPI, SQLAlchemy e Pydantic.",
+      "detail": "ViewSets, permissões e rotas para aproximar a ergonomia de um framework completo da composição de APIs assíncronas. Um projeto aberto sobre experiência de desenvolvimento e arquitetura.",
+      "url": "https://github.com/SorPuti/core-framework",
+      "demo": "https://sorputi.github.io/core-framework/"
+    }
+  ],
+  "sources": [
+    { "name": "Perfil e README", "url": "https://github.com/SorPuti/SorPuti" },
+    {
+      "name": "Experiência e formação: LinkedIn, dados fornecidos por Luh",
+      "url": "https://www.linkedin.com/in/lucas-gomes-b14a83309/"
+    }
+  ]
+}
