@@ -1,0 +1,179 @@
+.lost-page {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+  padding-block: 60px 80px;
+  min-height: calc(100svh - 230px);
+}
+.lost-copy > .eyebrow {
+  font-size: 8px;
+  color: var(--muted);
+}
+.lost-code {
+  display: flex;
+  gap: 6px;
+  margin-block: 25px 15px;
+}
+.lost-code button {
+  background: none;
+  padding: 0 7px 0 0;
+  font: 110px/0.85 var(--serif);
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+.lost-code button:hover {
+  transform: translateY(-4px);
+}
+.lost-code button[aria-pressed="true"] {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.lost-copy h1 {
+  font-size: 55px;
+  letter-spacing: -1.2px;
+  line-height: 1.04;
+  margin-bottom: 22px;
+}
+.lost-copy h1 em {
+  line-height: 1.04;
+}
+.lost-copy > p:not(.lost-trace) {
+  font-size: 14px;
+  max-width: 380px;
+}
+.lost-copy .lost-personal {
+  font-size: 11px !important;
+  color: var(--muted);
+  margin-top: 15px;
+  line-height: 1.9;
+}
+.lost-copy > .button {
+  margin-top: 28px;
+  font-size: 11px;
+  gap: 22px;
+}
+.lost-trace {
+  margin-top: 22px;
+  font-size: 8px;
+  color: var(--muted);
+  min-height: 28px;
+}
+.lost-world-stage {
+  position: relative;
+  margin-block: 15px;
+}
+.lost-world-stage #lost-world > svg {
+  display: block;
+  width: 100%;
+}
+.world-controls {
+  display: flex;
+  gap: 7px;
+}
+.beacon-button {
+  position: absolute;
+  left: 76%;
+  top: 52%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e6b97d80;
+  background: #17292baa;
+  color: #f5c784;
+  border-radius: 50%;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s;
+}
+.beacon-button:hover {
+  transform: scale(1.13);
+}
+.beacon-lit .beacon-button {
+  box-shadow: 0 0 25px #f5c78466;
+}
+.lost-margin {
+  background: none;
+  padding: 5px 0 5px 12px;
+  font: italic 21px var(--serif);
+  color: var(--accent);
+  transform: rotate(-5deg);
+}
+.lost-world-wrap .world-caption {
+  padding-inline: 0;
+  font-size: 7px;
+}
+.lost-world-wrap .world-top {
+  padding-inline: 0;
+}
+.lost-home {
+  font-size: 9px;
+}
+.return-portal:not([hidden]) {
+  display: block;
+  width: fit-content;
+  padding: 12px 0 6px;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--accent);
+  font-size: 12px;
+  color: var(--accent);
+}
+.lost-page + .site-footer {
+  font-size: 8px;
+}
+@media (max-width: 900px) {
+  .lost-page {
+    gap: 35px;
+  }
+  .lost-copy h1 {
+    font-size: 45px;
+  }
+  .lost-code button {
+    font-size: 90px;
+  }
+  .lost-copy > p:not(.lost-trace) {
+    font-size: 13px;
+  }
+  .lost-copy .lost-personal {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 600px) {
+  .lost-page {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 40px 50px;
+  }
+  .lost-copy h1 {
+    font-size: 49px;
+  }
+  .lost-code button {
+    font-size: 106px;
+  }
+  .lost-copy > p:not(.lost-trace) {
+    font-size: 14px;
+  }
+  .lost-copy .lost-personal {
+    font-size: 12px !important;
+  }
+  .lost-world-wrap {
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+  }
+  .lost-world-wrap .world-caption {
+    font-size: 6px;
+  }
+  .lost-home {
+    font-size: 7px;
+  }
+  .lost-page + .site-footer .footer-brand {
+    font-size: 7px;
+  }
+  .lost-copy > .button {
+    font-size: 12px;
+  }
+}

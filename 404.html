@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f0e7" />
+    <meta name="robots" content="noindex,follow" />
+    <title>404 — Um lugar que ainda não existe · Luh Gomes</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a href="/" class="brand" aria-label="Voltar ao atlas de Luh Gomes"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span
+          >LUH GOMES<small>SORPUTI / ENGENHARIA & IMAGINAÇÃO</small></span
+        ></a
+      ><a class="lost-home mono" href="/">VOLTAR AO ATLAS ↗</a>
+    </header>
+    <main id="lost-page" class="wrap lost-page">
+      <div class="lost-copy">
+        <span class="eyebrow">VOCÊ SAIU DAS COORDENADAS CONHECIDAS.</span>
+        <div class="lost-code" aria-label="Erro 404">
+          <button
+            data-digit="0"
+            aria-label="Primeira coordenada: 4"
+            aria-pressed="false"
+          >
+            4</button
+          ><button
+            data-digit="1"
+            aria-label="Segunda coordenada: 0"
+            aria-pressed="false"
+          >
+            0</button
+          ><button
+            data-digit="2"
+            aria-label="Terceira coordenada: 4"
+            aria-pressed="false"
+          >
+            4
+          </button>
+        </div>
+        <h1>Aqui o mapa<br /><em>ainda não chegou.</em></h1>
+        <p>
+          O endereço não existe. Mas um lugar vazio também pode ser o começo de
+          um mundo.
+        </p>
+        <p class="lost-personal">
+          Sou Luh. Gosto de entender as peças, conectar o que parece distante e
+          dar forma ao que ainda está só na imaginação. Até uma página perdida
+          merece uma pequena vida.
+        </p>
+        <a class="button" href="/"
+          >Encontrar o caminho de volta <span aria-hidden="true">↗</span></a
+        >
+        <a href="/#atlas" data-return-portal class="return-portal" hidden
+          >O portal abriu. Atravessar para os projetos ↗</a
+        >
+        <p id="lost-trace" class="mono lost-trace" role="status">
+          Uma coordenada também pode ser lida com as mãos.
+        </p>
+      </div>
+      <div class="lost-world-wrap">
+        <div class="world-top mono">
+          <span>ESTUDO 404 / O LUGAR QUE FALTAVA</span>
+          <div class="world-controls">
+            <button
+              id="world-replay"
+              class="icon-button"
+              aria-label="Recomeçar a construção do mundo"
+              title="Recomeçar"
+            >
+              ↻</button
+            ><button
+              id="motion-toggle"
+              class="icon-button"
+              aria-label="Pausar animações"
+              aria-pressed="false"
+            >
+              Ⅱ
+            </button>
+          </div>
+        </div>
+        <div class="lost-world-stage">
+          <div id="lost-world">
+            <svg
+              viewBox="0 0 560 520"
+              role="img"
+              aria-label="Uma ilha à espera de novas ideias"
+            >
+              <path
+                d="m80 300 200-100 200 100-200 120z"
+                fill="none"
+                stroke="currentColor"
+              />
+              <path
+                d="m80 300 200 160 200-160M280 200v260"
+                fill="none"
+                stroke="currentColor"
+                stroke-dasharray="3 8"
+              />
+            </svg>
+          </div>
+          <button
+            class="beacon-button"
+            data-beacon
+            aria-label="Acender o farol"
+            title="Uma luz para quem se perde"
+          >
+            ✧
+          </button>
+        </div>
+        <div class="world-caption mono">
+          <span>O CÉU ESCURECE. AS IDEIAS FICAM ACESAS.</span
+          ><button
+            class="lost-margin"
+            data-lost-notes
+            aria-label="Explorar anotação na margem"
+          >
+            ainda…
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="wrap site-footer">
+      <span class="footer-brand">SYNTHOSIA / TERRITÓRIO NÃO MAPEADO</span
+      ><button class="egg-counter text-button mono" data-egg-counter>
+        HÁ MAIS DO QUE PARECE ✳
+      </button>
+    </footer>
+    <dialog id="secret-dialog" aria-labelledby="secret-title">
+      <div class="dialog-top mono">
+        <span>UM CAMINHO FORA DO MAPA</span
+        ><button
+          class="close-button"
+          data-close-secret
+          aria-label="Fechar descoberta"
+        >
+          ×
+        </button>
+      </div>
+      <div id="secret-content"></div>
+    </dialog>
+    <noscript
+      ><p class="wrap">
+        Este lugar tem mais vida com JavaScript. O caminho para o
+        <a href="/">atlas principal</a> continua aberto.
+      </p></noscript
+    >
+    <script type="module" src="/src/notfound.ts"></script>
+  </body>
+</html>

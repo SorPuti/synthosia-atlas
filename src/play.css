@@ -1,0 +1,141 @@
+.terminal-game {
+  background: #0c1613;
+  color: #d9e3bd;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #53614a;
+}
+.terminal-top {
+  display: flex;
+  justify-content: space-between;
+  color: #b2ba99;
+  font-size: 7px;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.snake-board {
+  font: 16px/1.25 var(--mono);
+  letter-spacing: 1px;
+  margin: 0 auto;
+  max-width: fit-content;
+  white-space: pre;
+  color: #c4d594;
+}
+.snake-status {
+  font-size: 9px;
+  line-height: 1.6;
+  margin-top: 15px;
+  min-height: 29px;
+}
+.snake-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-block: 15px;
+}
+.snake-actions .button {
+  background: #d4dabf;
+  color: #14211a;
+  font-size: 11px;
+  padding: 11px 15px;
+}
+.snake-actions .text-button {
+  font-size: 10px;
+}
+.snake-direction {
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+}
+.snake-direction button {
+  background: #27372b;
+  border: 1px solid #69775b;
+  color: #e4e8cf;
+  padding: 8px 12px;
+  font-size: 18px;
+}
+.game-instructions {
+  font-size: 10px;
+  line-height: 1.8;
+  margin-top: 16px;
+  opacity: 0.8;
+}
+.block-game {
+  --block-ground: #c4c1a4;
+  --block-top: #a1b47a;
+  --block-left: #627455;
+  --block-right: #86946a;
+  margin-top: 22px;
+}
+.block-world {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.block-world g {
+  cursor: pointer;
+}
+.block-world path {
+  stroke: var(--paper);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+.block-world g:hover path,
+.block-world g:focus-visible path {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.block-status {
+  font-size: 9px;
+  color: var(--muted);
+  min-height: 35px;
+  margin-bottom: 12px;
+}
+.block-game > .text-button {
+  font-size: 11px;
+}
+.workbench {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 25px;
+}
+.workbench button {
+  padding: 20px 6px 14px;
+  border: 1px solid var(--line);
+  background: var(--light);
+  font-family: var(--mono);
+  font-size: 9px;
+}
+.workbench button > span {
+  display: block;
+  font-size: 38px;
+  font-family: var(--mono);
+  margin-bottom: 10px;
+}
+.workbench button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.workbench-memory {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 22px;
+  min-height: 125px;
+}
+@media (max-width: 400px) {
+  .snake-board {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+  .terminal-game {
+    padding: 15px 12px;
+  }
+  .workbench button {
+    font-size: 8px;
+  }
+  .snake-direction button {
+    padding: 8px 11px;
+  }
+}

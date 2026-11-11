@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { build } from "vite";
 import { JSDOM } from "jsdom";
 
-test("abas, currículo, pausa e sete descobertas funcionam inclusive com API indisponível", async () => {
+test("atlas, história, retrato, minijogos e descobertas funcionam com API indisponível", async () => {
   await build({
     configFile: false,
     logLevel: "silent",
@@ -50,7 +50,12 @@ test("abas, currículo, pausa e sete descobertas funcionam inclusive com API ind
   };
   dom.window.HTMLElement.prototype.scrollIntoView = function () {};
   const $ = (s) => document.querySelector(s);
-  const click = (s) => $(s).click();
+  const click = (s) => {
+    const el = $(s);
+    if (typeof el.click === "function") el.click();
+    else
+      el.dispatchEvent(new dom.window.MouseEvent("click", { bubbles: true }));
+  };
   const key = (k) =>
     document.dispatchEvent(
       new dom.window.KeyboardEvent("keydown", { key: k, bubbles: true }),
@@ -115,12 +120,69 @@ test("abas, currículo, pausa e sete descobertas funcionam inclusive com API ind
       JSON.parse(localStorage.getItem("luh-atlas-discoveries")).length,
       7,
     );
-    assert($("#egg-counter").textContent.includes("7 / 7"));
+    assert($("#egg-counter").textContent.includes("7 / 20"));
+    assert.equal(
+      $(".hero-portrait img").getAttribute("src"),
+      "/luh-github-avatar.jpg",
+    );
+    click(".hero-portrait");
+    click(".hero-portrait");
+    assert($(".secret-portrait"));
+    close();
+    word("azul");
+    assert(document.documentElement.classList.contains("blueprint"));
+    close();
+    word("orbita");
+    assert(document.documentElement.classList.contains("orbit-found"));
+    close();
+    word("eco");
+    assert($(".secret-echo"));
+    close();
+    word("semente");
+    assert(document.documentElement.classList.contains("seed-planted"));
+    close();
+    word("juntos");
+    assert(document.documentElement.classList.contains("thread-found"));
+    close();
+    click('[data-note="3"]');
+    assert($("#note-panel").textContent.includes("rei da informática"));
+    assert($("#note-panel").textContent.includes("Minecraft"));
+    click("[data-origin-story]");
+    close();
+    word("cobrinha");
+    assert($(".snake-board"));
+    click("[data-snake-start]");
+    assert.equal($("[data-snake-start]").textContent, "Pausar");
+    click("[data-snake-start]");
+    close();
+    word("blocos");
+    assert.equal(document.querySelectorAll("[data-cell]").length, 25);
+    click('[data-cell="0"]');
+    assert($(".block-status").textContent.includes("altura 2"));
+    $('[data-cell="0"]').dispatchEvent(
+      new dom.window.KeyboardEvent("keydown", { key: "Enter", bubbles: true }),
+    );
+    assert($(".block-status").textContent.includes("altura 3"));
+    click("[data-block-reset]");
+    assert($(".block-status").textContent.includes("vazio"));
+    close();
+    word("bancada");
+    click('[data-memory="ps2"]');
+    assert($(".workbench-memory").textContent.includes("PS2"));
+    close();
+    assert.equal(
+      JSON.parse(localStorage.getItem("luh-atlas-discoveries")).length,
+      17,
+    );
+    assert($("#egg-counter").textContent.includes("17 / 20"));
+    click("#world-replay");
+    assert(!document.documentElement.classList.contains("still"));
+    assert($(".living-world"));
     // Touch/keyboard route to hidden commands has real buttons.
     click(".pencil-note");
     click(".pencil-note");
     click(".pencil-note");
-    assert.equal(document.querySelectorAll("[data-secret]").length, 4);
+    assert.equal(document.querySelectorAll("[data-secret]").length, 13);
     close();
     await new Promise((resolve) => setTimeout(resolve, 20));
     assert($("#data-status").textContent.includes("CÓPIA PÚBLICA SALVA"));

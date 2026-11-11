@@ -14,10 +14,16 @@
 
 O código foi enviado ao repositório público `SorPuti/synthosia-atlas`. As rotinas de verificação e atualização diária foram disparadas, mas o GitHub não iniciou os jobs. A anotação retornada foi: `The job was not started because your account is locked due to a billing issue.`
 
-Oito testes e o build foram executados localmente com sucesso. A rotina diária está configurada, mas sua execução depende da liberação da conta no GitHub Actions. A API online da Vercel não depende dessas rotinas; consulta o GitHub público diretamente. A cópia salva permanece com a data da consulta indicada no site.
+Onze testes e o build foram executados localmente com sucesso. A rotina diária está configurada, mas sua execução depende da liberação da conta no GitHub Actions. A API online da Vercel não depende dessas rotinas; consulta o GitHub público diretamente. A cópia salva permanece com a data da consulta indicada no site.
 
 ## Limite de verificação visual
 
 O ambiente gerenciado desta conversa não ofereceu `cua_repl.js` nem outra ferramenta nativa de controle de Chrome. O desktop foi declarado `enabled: true`, com estado `unknown`, no executor `ccarenv_b64_Y2NhcmVudl8zZDUzZTUxOWE1ZTQ4MTkxODNlNDhmYWRhNmZkYTIwZA`. Não houve revisão renderizada do site em navegador, captura de tela do site ou medição de Lighthouse. Os testes de DOM não verificam o layout, foco nativo de diálogos, downloads reais no navegador ou animações.
 
 Antes de apontar o domínio, conferir no preview da Vercel: telas estreitas e largas, contraste, aba ativa, teclado, `Escape`, exportação dos cinco formatos, preferência por movimento reduzido e `/api/profile`. A imagem `public/og.png` é uma arte de compartilhamento, não uma captura do site.
+
+## Atualização do atlas
+
+Retrato público do GitHub integrado sem transformações. A narrativa de infância foi fornecida diretamente por Luh: Java aos 12, cobrinha no terminal, servidores de Minecraft e consertos com o pai. A atualização acrescenta 20 descobertas no total, cobrinha e blocos jogáveis, animação original com anoitecer de 45 segundos e 404 própria. Os onze testes incluem colisão, pontuação e pausa da cobrinha, controles do mundo de blocos, persistência entre páginas, portal, farol e conclusão dos 20 caminhos.
+
+O README principal foi compactado. O código recebeu licença MIT e os materiais pessoais têm seu tratamento descrito em NOTICE.md. O guia das descobertas foi movido para uma pasta oculta fora do build público.

@@ -1,0 +1,326 @@
+@property --world-land {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #d5d3bd;
+}
+@property --world-rock {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #b9bd9e;
+}
+@property --world-buildings {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #ede8dc;
+}
+@property --world-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #d7864b;
+}
+.world-controls {
+  display: flex;
+  gap: 7px;
+}
+.living-world {
+  --world-land: #d5d3bd;
+  --world-rock: #b9bd9e;
+  --world-buildings: #ede8dc;
+  --world-light: #d7864b;
+  --world-leaf: #afbf8b;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  width: 100%;
+  color: #46503e;
+  background: #eae6d9;
+  border: 1px solid var(--line);
+  animation: world-nightfall 45s ease-in-out forwards;
+}
+.world-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.world-architecture {
+  stroke-dasharray: 900;
+  animation: world-materialize 9s ease-out both;
+}
+.world-island {
+  animation: world-arrive 4s ease-out both;
+}
+.world-stars {
+  opacity: 0;
+  animation: world-stars-rise 45s ease-in-out forwards;
+}
+.world-stars circle {
+  animation: world-breathe 5s ease-in-out infinite alternate;
+  animation-delay: var(--star-delay);
+}
+.world-lights {
+  opacity: 0;
+  animation: world-lights-on 45s ease-in-out forwards;
+}
+.world-pulses {
+  stroke-dasharray: 3 14;
+  animation: world-connections 9s linear infinite;
+}
+.world-satellite {
+  animation: world-drift 12s ease-in-out infinite alternate;
+}
+.world-labels {
+  opacity: 0.8;
+}
+.world-phase {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  font-size: 7px;
+  letter-spacing: 0.8px;
+}
+.world-day-label {
+  animation: world-day-label 45s ease-in-out forwards;
+}
+.world-night-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  animation: world-stars-rise 45s ease-in-out forwards;
+}
+.world-hidden-words {
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+.world-orbits {
+  opacity: 0.15;
+  transition: opacity 1s;
+}
+.shared-thread {
+  opacity: 0;
+}
+.shared-thread path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.thread-found .shared-thread {
+  opacity: 0.8;
+}
+.thread-found .shared-thread path {
+  animation: world-stitch 4s ease-out forwards;
+}
+.seed-tree {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 2s,
+    transform 2s;
+}
+.seed-planted .seed-tree {
+  opacity: 1;
+  transform: translateY(0);
+}
+.orbit-found .world-orbits {
+  opacity: 0.6;
+}
+.orbit-found .world-satellite {
+  animation: world-drift 6s ease-in-out infinite alternate;
+}
+.beacon-rays {
+  opacity: 0.08;
+  transition: opacity 1s;
+}
+.beacon-lit .beacon-rays {
+  opacity: 0.25;
+}
+.lost-words-found .world-hidden-words {
+  opacity: 1;
+}
+.world-drawing:has(.living-world) {
+  margin: 16px 0 14px;
+}
+.world-drawing:has(.living-world) .unknown-star {
+  bottom: 14%;
+  right: 6%;
+}
+.blueprint {
+  --paper: #17364d;
+  --ink: #f0eee0;
+  --muted: #c0d0ce;
+  --accent: #f5c794;
+  --line: #527185;
+  --light: #23465b;
+  --dark: #102a3d;
+  --on-dark: #f0eee0;
+}
+.blueprint .project-tab.active .mono {
+  color: #17364d;
+}
+.blueprint .project-tab.active .tab-arrow {
+  color: #17364d;
+}
+.blueprint .notebook-page {
+  border-color: var(--line);
+  box-shadow:
+    7px 8px 0 -1px var(--light),
+    7px 8px 0 0 var(--line);
+}
+.blueprint .living-world {
+  animation: none;
+  color: #d3e1d7;
+  background: #17364d;
+  --world-land: #214e67;
+  --world-rock: #15354b;
+  --world-buildings: #20475b;
+  --world-light: #f5c794;
+}
+.blueprint .world-lights {
+  animation: none;
+  opacity: 0.4;
+}
+.blueprint .world-stars {
+  animation: none;
+  opacity: 0.5;
+}
+.blueprint .world-day-label {
+  animation: none;
+  opacity: 1;
+}
+.blueprint .world-night-label {
+  animation: none;
+  opacity: 0;
+}
+@keyframes world-nightfall {
+  0%,
+  10% {
+    background-color: #eae6d9;
+    color: #46503e;
+  }
+  45% {
+    background-color: #b8a68f;
+    color: #3c4237;
+  }
+  100% {
+    background-color: #080f13;
+    color: #b7c6b5;
+    --world-land: #17292b;
+    --world-rock: #102024;
+    --world-buildings: #243735;
+    --world-light: #f5c784;
+  }
+}
+@keyframes world-materialize {
+  from {
+    stroke-dashoffset: 900;
+    fill-opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+@keyframes world-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes world-stars-rise {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes world-lights-on {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes world-day-label {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  70%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes world-breathe {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes world-connections {
+  to {
+    stroke-dashoffset: -170;
+  }
+}
+@keyframes world-drift {
+  to {
+    transform: translate(22px, -12px);
+  }
+}
+@keyframes world-stitch {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.still .living-world,
+.still .living-world * {
+  animation-play-state: paused !important;
+  transition: none !important;
+}
+@media (max-width: 600px) {
+  .world-phase {
+    font-size: 6px;
+    top: 12px;
+    left: 12px;
+  }
+  .hero-portrait {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .living-world {
+    animation: none;
+  }
+  .living-world * {
+    animation: none !important;
+  }
+  .world-stars {
+    opacity: 0.45;
+  }
+  .world-lights {
+    opacity: 0.35;
+  }
+  .world-day-label {
+    opacity: 1;
+  }
+  .world-night-label {
+    opacity: 0;
+  }
+  .world-architecture {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+  .thread-found .shared-thread path {
+    stroke-dashoffset: 0;
+  }
+}
