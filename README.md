@@ -30,11 +30,13 @@ Não é preciso token para publicar. Opcionalmente, defina `GITHUB_PUBLIC_DATA_T
 
 ## Dados recentes, sem inventar currículo
 
-- `src/data/person.json`: experiência, formação, competências, textos e projetos revisados. Os dados do LinkedIn foram fornecidos pela titular em 11/11/2026. Curso e diploma da Unifacvest não foram inferidos; a conclusão é prevista para 2026.
+- `src/data/person.json`: experiência, formação, competências, textos e projetos revisados. Os dados do LinkedIn foram fornecidos pelo titular em 11/11/2026. Curso e diploma da Unifacvest não foram inferidos; a conclusão é prevista para 2026.
 - `api/profile.ts`: consulta somente `/users/SorPuti/repos` na API pública. Retorna uma allowlist de campos, exclui forks, arquivos, outros proprietários e repositórios privados e remove endereços de e-mail das descrições. Nenhum endpoint de conta privada é consultado.
 - `src/data/github.json`: cópia pública de segurança. Atualize com `npm run refresh` e faça commit; falhas não sobrescrevem o arquivo.
 - A Vercel mantém a consulta por 15 minutos, com até uma hora de revalidação em segundo plano. A data da consulta fica visível. O currículo consulta novamente antes do download; usa a cópia salva quando a consulta falha.
 - Os quatro projetos selecionados têm descrições revisadas; datas de código são atuais. Até dois outros repositórios públicos próprios recentes também entram no currículo. Forks não são apresentados como trabalhos originais.
+
+A rotina diária de renovação da cópia pública está em `.github/workflows/refresh.yml`. Nesta entrega, o GitHub bloqueou os jobs antes de iniciar por um problema de cobrança da conta. A consulta online na Vercel é independente. Veja [a verificação](docs/verification.md).
 
 **LinkedIn não tem sincronização automática.** A leitura pública foi bloqueada; não há scraping autenticado nem integração que prometa ler a conta. Para atualizar cargos e formação, edite `person.json` com os dados revisados e avance `reviewedAt`. O deploy seguinte aplica a atualização. Não inclua e-mail, telefone, documentos, credenciais ou informações privadas nesse arquivo público.
 

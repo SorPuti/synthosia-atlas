@@ -8,7 +8,13 @@
 - Extração de texto do PDF com Poppler e do XML do DOCX: nome, acentos, histórico, projetos e ausência de endereços de e-mail pessoais.
 - Inspeção visual da primeira página do PDF: fonte incorporada, texto selecionável e estrutura em uma coluna.
 - Testes de lógica de interface em DOM simulado: abas, comandos por teclado, menu para toque, sete descobertas, pausa, abertura/fechamento de diálogos e fallback da API.
-- Os registros públicos foram consultados diretamente no GitHub, e os dados profissionais foram fornecidos pela titular.
+- Os registros públicos foram consultados diretamente no GitHub, e os dados profissionais foram fornecidos pelo titular.
+
+## GitHub Actions
+
+O código foi enviado ao repositório público `SorPuti/synthosia-atlas`. As rotinas de verificação e atualização diária foram disparadas, mas o GitHub não iniciou os jobs. A anotação retornada foi: `The job was not started because your account is locked due to a billing issue.`
+
+Oito testes e o build foram executados localmente com sucesso. A rotina diária está configurada, mas sua execução depende da liberação da conta no GitHub Actions. A API online da Vercel não depende dessas rotinas; consulta o GitHub público diretamente. A cópia salva permanece com a data da consulta indicada no site.
 
 ## Limite de verificação visual
 

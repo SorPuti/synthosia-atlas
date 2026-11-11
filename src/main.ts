@@ -28,10 +28,10 @@ $("#app").innerHTML = `
     <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
       <div class="hero-top mono"><span class="status-dot">UM UNIVERSO PESSOAL, EM CONSTRUÇÃO</span><span class="place">ITAPOÁ, SC <span class="clock"></span></span></div>
       <div class="hero-layout">
-        <div class="hero-copy"><span class="eyebrow">LUCAS (LUH) GOMES <span>/ ELA · DELA</span></span>
+        <div class="hero-copy"><span class="eyebrow">LUCAS (LUH) GOMES <span>/ ELE · DELE</span></span>
           <h1 id="hero-title">Eu construo<br><em>mundos.</em></h1>
           <p class="hero-subtitle">Alguns começam com uma pergunta.<br>Outros, com uma linha de código.</p>
-          <p class="hero-description">Sou engenheira de software. Entre sistemas backend, ferramentas e experimentos, gosto de dar forma ao que ainda não existe — e entender o que faz tudo continuar de pé.</p>
+          <p class="hero-description">Sou engenheiro de software. Entre sistemas backend, ferramentas e experimentos, gosto de dar forma ao que ainda não existe — e entender o que faz tudo continuar de pé.</p>
           <a class="explore-link" href="#atlas"><span class="round-arrow" aria-hidden="true">↓</span> Explorar meu trabalho <span class="mono">01—04</span></a>
         </div>
         <div class="hero-world"><div class="world-top mono"><span>FIG. 001 — CARTOGRAFIA DO POSSÍVEL</span><button class="icon-button" id="motion-toggle" aria-pressed="false" aria-label="Pausar animações" title="Pausar animações">Ⅱ</button></div>
@@ -68,7 +68,7 @@ $("#app").innerHTML = `
     <section class="contact wrap"><div class="contact-top mono"><span>FIM DO MAPA. COMEÇO DE UMA CONVERSA.</span><span>SC / BR</span></div><div class="contact-main"><h2>Tem um mundo<br>em <em>mente?</em></h2><div><p>Gosto de conversar sobre problemas difíceis,<br>ferramentas úteis e ideias que ainda não têm nome.</p><a class="button contact-button" href="${person.linkedin}" ${external}>Vamos conversar no LinkedIn ${arrow}</a><div class="contact-links"><a href="${person.github}" ${external}>GitHub ${arrow}</a><button class="text-button" data-cv>Baixar currículo ↓</button></div></div></div></section>
   </main>
   <footer class="wrap site-footer"><a href="#inicio" class="footer-brand">LUH GOMES <span>/ SORPUTI</span></a><div class="footer-note"><span>Synthosia agora é um lugar para minha história.</span><span>Feito para ser explorado. © ${new Date().getFullYear()}</span></div><button class="egg-counter text-button mono" id="egg-counter" title="Ver pistas">HÁ MAIS DO QUE PARECE <span aria-hidden="true">✳</span></button></footer>
-  <dialog id="cv-dialog" aria-labelledby="cv-title"><div class="dialog-top mono"><span>DOCUMENTO DE PERCURSO / CV</span><button class="close-button" data-close aria-label="Fechar currículo">×</button></div><span class="eyebrow">LUCAS (LUH) GOMES · ELA/DELA</span><h2 id="cv-title">Leve a história<br><em>com você.</em></h2><p>Uma coluna, texto selecionável e títulos claros para pessoas e sistemas de recrutamento (ATS). Sem e-mail, telefone ou foto.</p><div id="cv-status" class="cv-status" role="status"></div><div class="cv-formats">${[
+  <dialog id="cv-dialog" aria-labelledby="cv-title"><div class="dialog-top mono"><span>DOCUMENTO DE PERCURSO / CV</span><button class="close-button" data-close aria-label="Fechar currículo">×</button></div><span class="eyebrow">LUCAS (LUH) GOMES · ELE/DELE</span><h2 id="cv-title">Leve a história<br><em>com você.</em></h2><p>Uma coluna, texto selecionável e títulos claros para pessoas e sistemas de recrutamento (ATS). Sem e-mail, telefone ou foto.</p><div id="cv-status" class="cv-status" role="status"></div><div class="cv-formats">${[
     ["pdf", "PDF", "Pronto para enviar"],
     ["docx", "Word", "Editável · .docx"],
     ["txt", "Texto", "Universal · .txt"],

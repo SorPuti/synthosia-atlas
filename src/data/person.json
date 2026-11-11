@@ -1,14 +1,14 @@
 {
   "name": "Lucas (Luh) Gomes",
   "shortName": "Luh Gomes",
-  "pronouns": "ela/dela",
-  "label": "Engenheira de software",
+  "pronouns": "ele/dele",
+  "label": "Engenheiro de software",
   "location": "Itapoá, Santa Catarina, Brasil",
   "github": "https://github.com/SorPuti",
   "linkedin": "https://www.linkedin.com/in/lucas-gomes-b14a83309/",
   "website": "https://synthosia.com",
   "reviewedAt": "2026-11-11",
-  "summary": "Engenheira de software com experiência em backend, automação e ferramentas para desenvolvedores. Desenvolvedora na Reddin e CTO na Imóvel Periciado, trabalhando com Python, APIs e análise de documentos jurídicos e registrais. No open source, explora memória estrutural para agentes, sistemas de voz e colaboração em tempo real.",
+  "summary": "Engenheiro de software com experiência em backend, automação e ferramentas para desenvolvedores. Desenvolvedor na Reddin e CTO na Imóvel Periciado, trabalhando com Python, APIs e análise de documentos jurídicos e registrais. No open source, explora memória estrutural para agentes, sistemas de voz e colaboração em tempo real.",
   "skills": [
     {
       "name": "Backend e arquitetura",
@@ -42,7 +42,7 @@
   "work": [
     {
       "name": "Reddin",
-      "position": "Desenvolvedora",
+      "position": "Desenvolvedor",
       "startDate": "2025-02",
       "endDate": "",
       "mode": "Remoto · Porto Alegre, RS",
